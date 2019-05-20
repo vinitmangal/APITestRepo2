@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>RestAssuredPro1Package</groupId>
+  <artifactId>RestAssuredPro1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>RestAssuredPro1</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<profiles>
+<profile>
+<id>firstRegression</id>
+<build>
+<pluginManagement>
+<plugins>
+<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M3</version>
+	<configuration>
+		<suiteXmlFiles>
+			<suiteXmlFile>
+				testng.xml
+			</suiteXmlFile>
+		</suiteXmlFiles>
+	</configuration>
+</plugin>
+</plugins>
+</pluginManagement>
+</build>
+</profile>
+</profiles>
+  <dependencies>
+    
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.0.0</version>
+    <scope>test</scope>
+</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
+</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.5</version>
+</dependency>
+    
+<!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
+<!-- <dependency>
+    <groupId>org.codehaus.groovy</groupId>
+    <artifactId>groovy-all</artifactId>
+    <version>2.5.7</version>
+    <type>pom</type>
+</dependency>
+    
+https://mvnrepository.com/artifact/com.github.cliftonlabs/json-simple
+<dependency>
+    <groupId>com.github.cliftonlabs</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>3.1.0</version>
+</dependency>
+     -->
+ 
+  </dependencies>
+</project>

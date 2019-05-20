@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="restApiTests.GoogleTest" duration-ms="2147" started-at="2019-05-20T17:47:51Z" finished-at="2019-05-20T17:47:53Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2147" started-at="2019-05-20T17:47:51Z" finished-at="2019-05-20T17:47:53Z">
+      <class name="restApiTests.GoogleTest">
+        <test-method status="PASS" signature="postReqTest()[pri:0, instance:restApiTests.GoogleTest@71be98f5]" name="postReqTest" duration-ms="2118" started-at="2019-05-20T17:47:51Z" finished-at="2019-05-20T17:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postReqTest -->
+      </class> <!-- restApiTests.GoogleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- restApiTests.GoogleTest -->
+</testng-results>
